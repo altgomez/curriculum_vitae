@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgb(255, 234, 0);
+    list-style-type: none;
+
+}
+
+body {
+    text-align: center;
+    background-image: url(/imagen/matrix-75.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* text-align: center;
+    text-align: left; */
+}
+
+div {
+    border-radius: 50%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(47, 80, 38, 0.871);
+}
+
+p {
+    font: oblique bold 150% cursive;
+}
+
+
+.contenedor {
+    background-color: rgba(240, 248, 255, 0);
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: repeat(1, 100%);
+    grid-template-areas:
+        "head"
+        "right"
+        "tarea"
+        "pie"
+        "foot"
+       
+}
+
+.perfil {
+    grid-area: head;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    animation: mostrar 3s ease-in forwards;
+    animation-delay: 1s;
+    padding: 5% 15% 5% 15%;
+}
+
+.formacion {
+    grid-area: right;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    animation: mostrar 3s ease-in forwards;
+    animation-delay: 1s;
+    padding: 5% 15% 5% 15%;
+    text-align: center;
+    text-align: left;
+}
+
+.formacion h1 {
+    text-align: center;
+}
+
+.animado {
+    border-radius: 50%;
+    background-color: rgba(25, 25, 201, 0.472);
+}
+
+.nombre {
+    grid-area: tarea;
+    display: grid;
+    display: flex;
+    animation: girar 10s infinite ease-in-out;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(55, 81, 197, 0.704);
+    border-radius: 50%;
+    padding: 2% 2%;
+    box-shadow: 2px 2px 40px 11px rgba(255, 230, 0, 0.568);
+    text-align: center;
+}
+
+.nombre h1 {
+    color: rgb(0, 251, 255);
+    font-size: 125%;
+}
+
+.nombre .foto {
+    border-radius: 50%;
+    width: 25%;
+}
+
+
+.aptitudes {
+    grid-area: pie;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    animation: mostrar 3s ease-in forwards;
+    animation-delay: 1s;
+    padding: 5% 15% 5% 15%;
+    text-align: center;
+    text-align: left;
+}
+
+.aptitudes h1 {
+    text-align: center;
+}
+
+.experiencia {
+    grid-area: foot;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    animation: mostrar 3s ease-in forwards;
+    animation-delay: 1s;
+    padding: 5% 15% 5% 15%;
+    text-align: center;
+    text-align: left;
+
+}
+
+@keyframes girar {
+    25% {
+        border-radius: 25%;
+    }
+
+    50% {
+        border-radius: 50%;
+    }
+}
+
+@keyframes mostrar {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
