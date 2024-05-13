@@ -126,6 +126,9 @@ p {
     text-align: left;
 
 }
+.experiencia h1 {
+    text-align: center;
+}
 
 @keyframes girar {
     25% {
