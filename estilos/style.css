@@ -83,11 +83,18 @@ p {
     padding: 2% 2%;
     box-shadow: 2px 2px 40px 11px rgba(255, 230, 0, 0.568);
     text-align: center;
+    transition: 1s;
+
+
+    :hover{
+   background-color: black;
+    }
 }
 
 .nombre h1 {
     color: rgb(0, 251, 255);
     font-size: 125%;
+    text-align: center;
 }
 
 .nombre .foto {
@@ -126,6 +133,7 @@ p {
     text-align: left;
 
 }
+
 .experiencia h1 {
     text-align: center;
 }
